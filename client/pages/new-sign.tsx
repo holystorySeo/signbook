@@ -26,10 +26,10 @@ function NewSign() {
 
   return (
     <div className="flex flex-col items-center justify-center mt-20">
-      <h1 className="mb-10 text-3xl">Next.js signbook!</h1>
-      <div className="grid mb-10 shadow-xl max-w-7xl bg-purple-50 p-7 grid-row-1">
-        <div>
-          <label htmlFor="nickname" className="mb-2 text-purple-900">
+      <h1 className="mb-10 text-3xl">Good travel signbook!</h1>
+      <div className="grid w-[50%] mb-10 shadow-xl max-w-7xl bg-purple-50 p-7 grid-row-1">
+        <div className="mb-4">
+          <label htmlFor="nickname" className="flex mb-2 text-purple-900">
             Nickname
           </label>
           <input
@@ -40,8 +40,8 @@ function NewSign() {
             className="w-full p-2 rounded-lg"
           />
         </div>
-        <div>
-          <label htmlFor="content" className="mb-2 text-purple-900">
+        <div className="mb-4">
+          <label htmlFor="content" className="flex mb-2 text-purple-900">
             Leave a message!
           </label>
           <textarea
@@ -51,8 +51,8 @@ function NewSign() {
             onChange={(e) => handleInput({ e, name: "content" })}
           ></textarea>
         </div>
-        <div>
-          <label htmlFor="nickname" className="mb-2 text-purple-900">
+        <div className="mb-4">
+          <label htmlFor="nickname" className="flex mb-2 text-purple-900">
             If you want, write your country name an its emogi flag
           </label>
           <input
